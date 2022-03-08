@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+    --red-title: #f7600e;
+    --black-title: #3b434c;
+
+    --semi-bold: 600;
+    --semi-regular: 400;
+
+}   
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* -- Nav --*/
+
+header{
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    max-height: 100px;
+}
+
+.logo img {
+    width: 135px;
+    height: 99px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: var(--semi-bold);
+    color: var(--black-title);
+}
+.nav-item:hover {
+    color: var(--red-title);
+}
+
+
+/* -- banner --*/
+.banner{
+    background-image: url(../_img/backgroud_banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 650px;    
+    color: #fff;
+}
+
+
+.banner .banner-descrition{
+    position: absolute;
+    top: 20em;
+    right: 18em;
+}
+
+.banner .banner-title{
+    font-size: 45px;
+    font-weight: var(--semi-bold);
+    margin-bottom: 20px;
+}
+.banner-descrition p{
+    max-width: 750px;
+    font-size: 1.5em;
+    font-weight: var(--semi-regular);
+    line-height: 1.6em;
+}
