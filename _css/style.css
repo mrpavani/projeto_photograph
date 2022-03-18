@@ -3,9 +3,14 @@
 :root{
     --red-title: #f7600e;
     --black-title: #3b434c;
+    --bg_services: #F2F2F2;
+    --color-font:#707070;
 
+    --bold: 700;
     --semi-bold: 600;
-    --semi-regular: 400;
+    --medium: 500;
+    --regular: 400;
+    
 
 }   
 
@@ -15,13 +20,42 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    transition: all .5s;
 }
 
-/* -- Nav --*/
+section {
+    margin: 30px 0;
+    padding: 50px 0;
+
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: var(--semi-bold);
+    text-transform: uppercase;
+    color: var(--black-title);
+    text-align: center;
+    margin-top: 20px;  
+}
+
+span{
+    color: var(--red-title);
+    
+}
 
 header{
     width: 100%;
 }
+
+
+
+/* -- Nav --*/
+
 
 .container {
     margin: 0 auto;
@@ -76,6 +110,185 @@ header{
 .banner-descrition p{
     max-width: 750px;
     font-size: 1.5em;
-    font-weight: var(--semi-regular);
+    font-weight: var(--regular);
     line-height: 1.6em;
+}
+
+/* -- section about --*/
+
+.about_section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.about_photo{
+    width: 40%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.about_photo img{
+    width: 293px;
+    height: 290px;
+
+}
+
+.about_descrition {
+    width: 60%;
+    padding-top: 40px;
+}
+
+.about_descrition p {
+    font-size: 16px;
+    color: var(--color-font);
+    line-height: 1.62;
+    margin-top: 10px;
+    padding-right: 10%;
+}
+
+/* -- section services -- */
+
+.services {
+    width: 100%;
+    background-color: var(--bg_services);
+    padding-top: 3%;
+
+}
+
+.services_content{
+    max-width: 1400px;
+    background: var(--bg_services);
+    margin: 0 auto;
+    padding-top: 3%;
+    
+}
+
+.services_card {
+    padding: 3% 3%;
+}
+
+/* Works */
+
+.works_content{
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.works_descrition{
+    width: 50%;
+    padding: 0 3%;   
+}
+
+.works_descrition h3{
+    font-size: 30px;
+    font-weight: var(--medium);
+    padding-bottom: 1em;
+}
+.works_descrition p{
+    font-size: 16px;
+    font-weight: var(--regular);
+    padding: 2% 5% 2% 0;
+    color: var(--color-font);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.btn{
+    width: 172px;
+    height: 50px;
+    background-color: var(--red-title);
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 2%;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #fff;
+    color: var(--red-title); 
+    border: 1px solid var(--red-title);
+    
+}
+
+.works_location {
+    width: 50%;
+    position: relative;
+    padding: 0 2%;
+}
+
+.work_card img{
+    width: 390px;
+    height: 260px;
+    
+}
+
+.work_card p{
+    font-size: 25px;
+    font-weight: var(--medium);
+    color: var(--color-font);
+}
+
+.img_italy{
+    position: absolute;
+    top: 0px;
+}
+
+.img_grecy {
+    position: absolute;
+    top: 37%;
+    left: 20%;
+}
+
+.img_croatia{
+    position: absolute;
+    top: 71%;
+    left: 41%;
+}
+
+
+/* -- section contact --*/
+
+.contact{
+    background-image: url(../_img/photo_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.contact h2{
+    color: #fff;
+}
+
+.contact_content{
+    max-width: 1200px;
+    padding: 5%;
+    margin: 0 auto;
+    
+}
+.input{
+    width: 44%;
+    padding: 1.5% 1%;
+    margin: 0 .8%;
+    border-radius: 10px;
+}
+
+.text_msg{
+    width: 90%;
+    margin: 1.5% 1% 1%;
+    padding: 1%;
+    border-radius: 10px;
+}
+.social_media{
+    display: flex;
+    justify-content: end;
+    margin-top: -5%;
+    margin-right: 9%;
+}
+
+.social_media a{
+    margin: 0 1%;
 }

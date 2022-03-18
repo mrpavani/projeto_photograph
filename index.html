@@ -12,24 +12,92 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="_img/photograph_logo_transp.png" alt="logo Photograph">
+                <a href="index.html">
+                    <img src="_img/photograph_logo_transp.png" alt="logo Photograph">
+                </a>
             </div>
             <nav class="navbar">
-                <a href="#" class="nav-item">Home</a>
-                <a href="#" class="nav-item">About</a>
-                <a href="#" class="nav-item">Services</a>
-                <a href="#" class="nav-item">Works</a>
-                <a href="#" class="nav-item">Contact</a>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#works" class="nav-item">Works</a>
+                <a href="#contact" class="nav-item">Contact</a>
             </nav>
         </div>
     </header>
-    <section class="banner">
+    <div class="banner">
         <div class="banner-descrition">
             <h1 class="banner-title">Lorem Ipsum </h1>
             <p>"A good photograph is one that communicates a fact, touches the heart and leaves the viewer a changed person for having seen it. It is, in a word, effectiveness."</p>
         </div>
-        
-    </section>
+    </div>
+    <main>
+        <section class="about" id="about">
+            <h2>our <span>about</span></h2>
+            <div class="about_section">
+                <div class="about_photo">
+                    <img src="_img/About_img.png" alt="image about photograph">
+                </div>
+                <div class="about_descrition">
+                    <p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p><br>
+                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h2>our <span>Services</span></h2>
+            <div class="services_content">
+               <img src="_img/P1.png" class="services_card" alt="image services">
+               <img src="_img/P2.png" class="services_card" alt="image services">
+               <img src="_img/P3.png" class="services_card" alt="image services">
+               <img src="_img/P4.png" class="services_card" alt="image services">
+               <img src="_img/P5.png" class="services_card" alt="image services">
+               <img src="_img/P6.png" class="services_card" alt="image services">
+            </div>
+        </section>
+        <section class="works" id="works">
+            <h2>our<span>Works</span></h2>
+            <div class="works_content">
+                <div class="works_descrition">
+                    <h3><span>W</span>orks places</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, massa eu elementum sodales, nulla sem dictum eros, fringilla iaculis risus arcu eu purus. Aliquam odio neque, euismod non lectus at, facilisis congue enim. In sit amet felis tristique, interdum velit et, viverra ligula. Praesent vel lacus rhoncus, mollis sem ultrices, lobortis lacus. Mauris volutpat metus nulla, ut hendrerit felis tempor id. Donec quis aliquet arcu, sit amet posuere tellus. Pellentesque varius neque et metus sagittis, non feugiat est lobortis. Curabitur tincidunt ultrices enim, eu ornare lorem euismod a. Nam sit amet dapibus eros. Integer efficitur sit amet eros id vehicula. Nullam ornare sit amet erat nec ultricies. Suspendisse gravida enim et ligula posuere semper. Integer ac lorem vel felis hendrerit finibus</p><br>
+                    <p>Donec pharetra, nulla et maximus tincidunt, enim nisi malesuada nisl, vitae congue felis lacus ut libero. Nullam rhoncus eros iaculis porta accumsan. Mauris posuere vel augue eget sodales. Cras non venenatis elit. Curabitur a arcu tortor. Etiam laoreet augue et nisi molestie, in porttitor</p>
+                    <button class="btn">read</button>
+                </div>
+                <div class="works_location">
+                    <div class="work_card img_italy">
+                        <img src="_img/business_01.jpg" alt="business Italy">
+                        <p>Italy</p>
+                    </div>
+                    <div class="work_card img_grecy">
+                        <img src="_img/business_02.jpg" alt="business Grecy">
+                        <p>Grecy</p>
+                    </div>
+                    <div class="work_card img_croatia">
+                        <img src="_img/business_03.jpg" alt="business Croatia">
+                        <p>Croatia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>say <span>hello</span></h2>
+            <div class="contact_content">
+                <input type="text" class="input name" id="name" placeholder="Your Name">
+                <input type="text" class="input subject" id="subject" placeholder="Subject">
+                <textarea name="msg" id="msg" cols="30" rows="10" class="text_msg" placeholder="Your Message"></textarea>
+                
+                <button class="btn">hire us</button>
+                <div class="social_media">
+                    <a href="#"><img src="_img/icon_fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="_img/icon_twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="_img/icon_google.png" alt="Google"></a>
+                    <a href="#"><img src="_img/icon_pink.png" alt="social media"></a>
+                    <a href="#"><img src="_img/icon_be.png" alt="Behance"></a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
